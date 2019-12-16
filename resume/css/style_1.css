@@ -1,0 +1,17 @@
+.basic-info > dl,
+.contact > dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.basic-info > dl > dd,
+.contact > dl > dd {
+	margin-left: 1rem;
+	margin-right: 4rem;
+}
+
+.cap-dscrb dd,
+.edu dd,
+.program dd {
+	margin-bottom: 10px;
+}

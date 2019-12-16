@@ -1,0 +1,52 @@
+header {
+	border: 1px solid #d6d6d6;
+	padding-inline-start: 64px;
+	background-color: #858585;
+	color: white;
+}
+main section {
+	display: flex;
+}
+section .wrapper {
+	flex: 0 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	border-bottom: 1px solid #fff;
+	height: 200px;
+	width: 200px;
+	background-color: #d6d6d6;
+}
+.wrapper h2 {
+	font-size: 18px;
+}
+
+section dl {
+	flex: 1 1 auto;
+	border: 1px solid #d6d6d6;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.basic-info > dl > *,
+.contact > dl > * {
+	display: inline-block;
+}
+
+.basic-info > dl > dd,
+.contact > dl > dd {
+	margin-left: 5px;
+	margin-right: 5%;
+}
+
+.edu dl > *,
+.program dl > *,
+.cap-dscrb dl > * {
+	float: left;
+}
+.edu dt,
+.program dt,
+.cap-dscrb dt {
+	clear: left;
+}
