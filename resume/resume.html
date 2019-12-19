@@ -73,6 +73,7 @@
 				</dl>
 			</section>
 			<section class="program">
+
 				<div class="wrapper">
 					<h2>项目经历</h2>
 				</div>
@@ -83,9 +84,28 @@
 					<dd>作为文档工程师参与了 SAN DOC 编写</dd>
 				</dl>
 			</section>
+			<section class="hobby">
+				<div class="wrapper">
+					<h2>兴趣爱好</h2>
+				</div>
+				<dl>
+					<dt><button type="button" onclick="cheeckhob()">点击查看</button></dt>
+					<dd id="demo" style="display: none;">我的爱好是打球，看电影。</dd>
+					<dt><button type="button2" onclick="show()">点击进入</button></dt>
+					<dd></dd>
+				</dl>
+			</section>
 		</main>
 	</div>
 	<script src="js/switchSheet.js"></script>
+	<script>
+		function cheeckhob(){
+			document.getElementById('demo').style.display='block';
+		}
+		function show(){
+			alert('已结束！');
+		}
+	</script>
 </body>
 
 </html>
