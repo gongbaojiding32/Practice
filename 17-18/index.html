@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>17-18</title>
+</head>
+<body>        
+    <input id="first-number" type="text" value="0" placeholder="第一个数字">
+    <input id="second-number" type="text" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        //op :操作符，加减乘除
+        function calculate(op) {
+            let result;
+            let numberOne = Number(document.getElementById("first-number").value);
+            let numberTwo = Number(document.getElementById("second-number").value);
+            if (isNaN(numberOne) || isNaN(numberTwo) ) {
+                alert("操作数不是数字！")
+                console.log("操作数不是数字！");
+            }else {
+                switch(op) {
+                    case "+":
+                        result = numberOne + numberTwo;
+                        break;
+                    case "-":
+                        result = numberOne - numberTwo;
+                        break;
+                    case "*":
+                        result = numberOne * numberTwo;
+                        break;
+                    case "/":
+                        if (numberTwo == 0) {
+                            alert("除数不能为0！")
+                            console.log("除数不能为0！");
+                        }
+                        result = numberOne / numberTwo;              
+                }
+                document.getElementById("result").textContent = "运算结果：" + result;
+            }
+        }
+        document.getElementById("add-btn").onclick = function(){calculate("+")};
+        document.getElementById("minus-btn").onclick = function(){calculate("-")};
+        document.getElementById("times-btn").onclick = function(){calculate("*")};
+        document.getElementById("divide-btn").onclick = function(){calculate("/")};
+    </script>
+</body>
+</html>
