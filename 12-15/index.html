@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>百度前端第12~第15天作业</title>
+	<link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<!--
+最左侧一列要求自适应浏览器高度，左上面4个按钮相对浏览器左上角固定位置，左下方两个按钮相对浏览器左下角固定位置
+左侧第二列(蓝色背景色)导航列固定宽度，高度也是自适应浏览器高度，最下面的Monthly Goals部分的内容相对浏览器下边固定位置
+整个白色区域自适应宽度，右上方的人脸，名字部分相对浏览器右上角固定位置
+白色区域左侧列固定宽度，右侧列自适应宽度-->
+	<div class="warp">
+		<div class="left-sidebar">
+			<div class="sidebar-menu">
+				<ul>
+					<li><a href="#"><img src="./img/left-img-1.png"></a></li>
+					<li><a href="#"><img src="./img/left-img-2.png"></a></li>
+					<li><a href="#"><img src="./img/left-img-3.png"></a></li>
+					<li><a href="#"><img src="./img/left-img-4.png"></a></li>
+				</ul>
+			</div>
+			<div class="sidebar-tool">
+				<a href="#" class="margin"><img src="./img/left-tool-img-1.png"></a>
+				<a href="#"><img src="./img/left-tool-img-2.png"></a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content-warp">
+				<div class="content-warp-top">
+					<div class="content-menu">
+						<ul>
+							<li><a href="#" class="title
+					   	  ">MENU</a><a href="#" class="img"><img src="./img/left-tool-img-2.png"></a></li>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">Sales<span class="img Messages">54</span></a></li>
+							<li><a href="#">Your Staff</a></li>
+							<li><a href="#">Analytics & Targeting</a></li>
+							<li><a href="#">What's New</a></li>
+						</ul>
+					</div>
+					<div class="content-products">
+						<ul>
+							<li><a href="#" class="title
+					   	  ">Your Products</a><a href="#" class="img"><img src="./img/left-tool-img-2.png"></a></li>
+							<li><a href="#"><img src="./img/content-products-img-1.png"> Books</a></li>
+							<li><a href="#"><img src="./img/content-products-img-2.png"> Tutorials</a></li>
+							<li><a href="#"><img src="./img/content-products-img-3.png"> Stocks</a></li>
+							<li><a href="#"><img src="./img/content-products-img-4.png"> Infographics</a></li>
+						</ul>
+					</div>
+					<div class="content-dashboard">
+						<ul>
+							<li><a href="#" class="title
+					   	  ">Dashboard</a><a href="#" class="img"><img src="./img/left-tool-img-2.png"></a></li>
+							<li><a href="#">Messages<span class="img Messages">21</span></a></li>
+							<li><a href="#">Connections</a></li>
+							<li><a href="#">Integrations</a><a href="#"><img src="./img/content-dashboard-img-1.png"
+										class="img"></a></li>
+							<li><a href="#">Account Settings</a></li>
+							<li><a href="#">App Settings</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-warp-bottom">
+					<div class="bottom-text">
+						<span>Monthly Goals</span>&nbsp&nbsp
+						<span>$580/$3200</span>
+					</div>
+					<a href="#"><img src="./img/content-warp-bottom-img.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="right-messages">
+				<span class="messages-title">Messages</span>
+				<span class="search-box-border">
+					<span class="search-box">
+						<input class="search" type="search" name="search1" placeholder="Search">
+						<span class="search-img"><a href="#"><img src="./img/search-img.png"></a></span>
+					</span>
+				</span>
+				<div class="right-messages-border">
+					<ul>
+						<form action="#" method="get">
+							<li>
+								<div class="one">
+									<div class="one-messages">
+										<img src="./img/one-messages-img-1.png">
+										<div class="one-messages-title">
+											<span class="title"><span class="ring"></span>Bessie Berry</span>
+											<span class="text">Twitter</span>
+										</div>
+										<span class="interval">3m</span>
+									</div>
+									<div class="one-text">
+										<span class="text">I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In
+											fact, it's relatively quick, and stable...</span>
+										<span class="ring-background">4</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="one">
+									<div class="one-messages">
+										<img src="./img/one-messages-img-2.png">
+										<div class="one-messages-title">
+											<span class="title2"><span class="ring2"></span>Victor Weber</span>
+											<span class="text">Adobe</span>
+										</div>
+										<span class="interval">8m</span>
+									</div>
+									<div class="one-text">
+										<span class="text">I shared this on my fb wall a few months back, and I thought
+											I'd share it here again because it's such a great...</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="one">
+									<div class="one-messages">
+										<img src="./img/one-messages-img-3.png">
+										<div class="one-messages-title">
+											<span class="title2"><span class="ring2"></span>Dustin Benson</span>
+											<span class="text">Facebook</span>
+										</div>
+										<span class="interval">Yesterday</span>
+									</div>
+									<div class="one-text">
+										<span class="text">If there is anyone who needs an invitation please add
+											yourself in the comments of this post!</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="one">
+									<div class="one-messages">
+										<img src="./img/one-messages-img-4.png">
+										<div class="one-messages-title">
+											<span class="title2"><span class="ring2"></span>Jack Mason</span>
+											<span class="text">Yahoo</span>
+										</div>
+										<span class="interval">Yesterday</span>
+									</div>
+									<div class="one-text">
+										<span class="text">BruteDC is a peer-to-peer movie+tv series sharing and
+											downloading platform which works on intranet inside...</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="one">
+									<div class="one-messages">
+										<img src="./img/one-messages-img-5.png">
+										<div class="one-messages-title">
+											<span class="title2"><span class="ring2"></span>Stephen Shelton</span>
+											<span class="text">Snapchat</span>
+										</div>
+										<span class="interval">13 Jun</span>
+									</div>
+									<div class="one-text">
+										<span class="text">Yes, p2p traffic is often filtered (QoSed). Although i do use
+											BT on O2 wires, and in good days dl speed...</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="one">
+									<div class="one-messages">
+										<img src="./img/one-messages-img-6.png">
+										<div class="one-messages-title">
+											<span class="title2"><span class="ring2"></span>Sally Willis</span>
+											<span class="text">Twitter</span>
+										</div>
+										<span class="interval">12 Jun</span>
+									</div>
+									<div class="one-text">
+										<span class="text">Yes, it's O2: 'internet extreme', which is no longer
+											offered.</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="one">
+									<div class="one-messages">
+										<img src="./img/one-messages-img-7.png">
+										<div class="one-messages-title">
+											<span class="title2"><span class="ring2"></span>Robert Patton</span>
+											<span class="text">A Team</span>
+										</div>
+										<span class="interval">9 Jun</span>
+									</div>
+									<div class="one-text">
+										<span class="text">I change my service from this 4Mb plan to their much cheaper
+											8M</span>
+									</div>
+								</div>
+							</li>
+						</form>
+					</ul>
+				</div>
+			</div>
+			<div class="left-messages">
+				<div class="messages-personally">
+					<div class="messages-personally-warp">
+						<img src="./img/personally-img.png">
+						<div class="messages-name">
+							<span class="title">Jordan J.</span>
+							<span class="admin">administrator</span>
+						</div>
+						<img src="./img/messages-personally-tool-img.png" class="tool">
+					</div>
+				</div>
+
+				<div class="nav">
+					<span class="nav-title">Bessie Berry</span>
+					<span class="nav-ring"></span>
+					<div class="nav-button">
+						<div class="button-left">
+							<a href="#" class="nav-img"><img src="./img/nav-img-1.png"></a>
+							<a href="#" class="nav-img"><img src="./img/nav-img-2.png"></a>
+							<a href="#" class="nav-img"><img src="./img/nav-img-3.png"></a>
+						</div>
+						<span class="page">1 of 28</span>
+						<div class="button-right">
+							<a href="#" class="right-img"><img src="./img/nav-img-left.png"></a>
+							<a href="#" class="right-img"><img src="./img/nav-img-right.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="new-article1">
+						<a href="#" class="img"><img src="./img/one-messages-img-1.png"></a>
+						<div class="article-centent">
+							<span class="name">Bessie Berry</span>
+							<span class="time">8:31 AM</span>
+							<span class="centent">Hi guys Ive got the O2 package and have really slow internet. A
+								speed
+								check online said i can get 3mbps but it seems more like 0.5 these days, just
+								freezing
+								and taking ages to open pages and open audio files for example. I have decided to
+								switch
+								to the UPC package which offers 10mbps but do you think i will get it?</span>
+						</div>
+
+
+						<a href="#" class="img2"><img src="./img/user-Photo-jordonj.png"></a>
+						<div class="article-centent">
+							<span class="name">Bessie Berry</span>
+							<span class="time">8:31 AM</span>
+							<span class="centent">I have internet for 9 month and nevere could benefit from the full
+								capacity of 5Mbit/s as it is filtered by O2 when it
+								detect traffic on public p2p sharing in my situation all my internet speed slows to
+								512Kbit/s. I never had 400KB/s on
+								when downloading from p2p public servers like torrent emule etc. I downoad with
+								500KB/s
+								from private trakers
+								instead. So conlcusion O2 block trafic on p2p connections. I have made hundreds of
+								test
+								in Italy and Sweden and
+								Romania with the same file to doanload with the same setting and same antivirus and
+								just
+								needed to open ports in
+								firewall and forward same ports and the speed was at full capacity in 1 minute. here
+								in
+								9 month never had this luck.</span>
+						</div>
+					</div>
+					<div class="new-article2">
+						<div class="article-date">Tuesday</div>
+						<a href="#" class="img"><img src="./img/one-messages-img-1.png"></a>
+						<div class="article-centent">
+							<span class="name">Bessie Berry</span>
+							<span class="time">8:31 AM</span>
+							<span class="centent">Funny comparison. so would the proper antivirus not slow down the
+								internet as much or do you mean a freebie
+								doenst protect the computer from viruses?</span>
+						</div>
+
+						<a href="#" class="img"><img src="./img/user-Photo-jordonj.png"></a>
+						<div class="article-centent">
+							<span class="name">Bessie Berry</span>
+							<span class="time">8:31 AM</span>
+							<span class="centent">I pay for the 4Mb/sec down, 512 Kb/sec up service from O2, and
+								haven't
+								had any problems. In fact, it's relatively
+								quick, and stable. It's not perfect, but I really don't have issues, as long as I
+								keep
+								track of what I'm doing on it. I max
+								out at about 3 Mb/sec down, and 350 Kb/sec up. Probably because of a noisy telephone
+								line, not because I'm being
+								throttled. When my uploads go over 25 KB/sec (note, bytes, not bits), my download
+								speed
+								suffers. This is expected, as
+								downloads require upload bandwidth as well. </span>
+							<div class="inside">
+								<a href="#" class="inside-img1"><img src="./img/12_15_82.png"></a>
+								<a href="#" class="inside-img2"><img src="./img/12_15_84.jpg"></a>
+								<a href="#" class="inside-img3"><img src="./img/Open-icon.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="new-article3">
+						<div class="article-title">New Messages</div>
+						<a href="#" class="img"><img src="./img/one-messages-img-1.png"></a>
+						<div class="article-centent">
+							<span class="name">Bessie Berry</span>
+							<span class="time">8:31 AM</span>
+							<span class="centent">I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In
+								fact,
+								it's relatively quick, and stable. It's not perfect,
+								but I really don't have issues, as long as I keep track of what I'm doing on it.
+							</span>
+						</div>
+
+						<div class="add-box clearfix">
+							<div class="add-btn"><img class="add-icon" src="./img/Add-icon.png"></div>
+							<div class="add-content">
+								Well, kinda both :) but more of that second option, i've seen many systems infected
+								and
+								crawling with
+								<span class="add-line"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+</body>
+
+</html>

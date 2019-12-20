@@ -1,0 +1,517 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:"微软雅黑"; 
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #b7c0cd;
+	font-size: 14px;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+
+/*隐藏导航栏*/
+.content-warp .content-warp-top::-webkit-scrollbar,.right .right-messages-border::-webkit-scrollbar,.left-messages .article::-webkit-scrollbar{
+   width: 0 !important ;
+}
+.warp{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+/*最左侧一列样式*/
+.left-sidebar{
+    width: 100px;
+	height: 100%;
+	order: 1;
+}
+.left-sidebar .sidebar-menu{
+	position: absolute;
+    background-color: #1d2531;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    overflow: auto;
+}
+.left-sidebar .sidebar-menu ul li{
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    margin-top: 20px;
+}
+.left-sidebar .sidebar-tool{
+	position: absolute;
+    bottom: 0;
+    background-color: #1d2531;
+    height: 10%;
+    width: 100px;
+	text-align: center;
+}
+.left-sidebar .sidebar-tool .margin{
+	margin-right: 13px;
+}
+/*左侧第二列样式*/
+.content{
+	order: 2;
+    width: 250px;
+    height: 100%;
+}
+.content .content-warp{
+	position: absolute;
+    background-color: #222c3c;
+    width: 235px;
+    height: 100%;
+}
+.content .content-warp ul li{
+    height: 35px;
+}
+.content .content-warp ul li a:hover{
+	color: #fff;
+}
+.content-warp .content-warp-top{
+	position: absolute;
+    width: 190px;
+    height: 90%;
+    left: 30px;
+    overflow: auto;
+}
+.content .content-warp .title{
+	color: #fff;
+	font-size: 12px;
+}
+.content .content-warp .img{
+	position: absolute;
+	right: 0px;
+}
+.content .content-warp .Messages{
+	display: inline-block;
+    width: 32px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #2ba0f6;
+}
+.content .content-warp .content-menu{
+	position: relative;
+	padding-top: 40px;
+	border-bottom: 1px solid #2a3547;
+}
+.content .content-warp .content-products{
+	position: relative;
+    padding-top: 25px;
+    border-bottom: 1px solid #2a3547;
+}
+.content .content-warp .content-dashboard{
+	position: relative;
+    padding-top: 30px;
+    border-bottom: 1px solid #2a3547;
+}
+.content .content-warp .content-warp-bottom{
+	position: absolute;
+    left: 30px;
+	bottom: 0;
+	height: 10%;
+}
+.content .content-warp .content-warp-bottom .bottom-text{
+	color: #fff;
+	font-size: 14px;
+}
+/*白色区域样式*/
+.warp .right{
+	height: 100%;
+    overflow: hidden;
+    flex: 1;
+    order: 3;
+    display: flex;
+}
+/*白色区域左侧列样式*/
+.right .right-messages{
+	width: 400px;
+    order: 1;
+    height: 100%;
+}
+.right .right-messages .messages-title{
+	display: block;
+    padding-left: 30px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    border-bottom: 1px solid #e5e8ee;
+}
+.right .right-messages .search-box-border{
+	border-bottom: 1px solid #e5e8ee;
+    border-right: 1px solid #e5e8ee;
+    display: inline-block;
+    width: 399px;
+}
+.right .search-box{
+	display: block;
+	height: 35px;
+	width: 330px;
+	line-height: 35px;
+	border:1px solid #e6e9ef;
+	border-radius: 10px;
+	padding-left: 20px;
+	margin:20px 0px 20px 30px;
+}
+.right .search-box .search{
+	height: 30px;
+	width: 290px;
+	border:none;
+	outline: none;
+}
+.right .right-messages .right-messages-border{
+	position: absolute;
+    width: 399px;
+    height: 70%;
+    overflow: auto;
+    border-right: 1px solid #e5e8ee;
+}
+.right .right-messages ul li{
+	height: 130px;
+	border-bottom: 1px solid #e5e8ee;
+}
+.right .right-messages ul li:hover{
+	border-left: 4px solid #2399f1;
+}
+.right .right-messages .one{
+	position: relative;
+	width: 350px;
+	height: 130px;
+	margin-left: 30px;
+}
+.right .right-messages .one .one-messages{
+	margin-top: 15px;
+}
+.one .one-messages .one-messages-title{
+	position: absolute;
+	display: inline-block;
+	top: 10px;
+	left: 65px;
+}
+.one .one-messages .one-messages-title .title{
+	color: #77b8f5;
+	font-size: 16px;
+}
+.one .one-messages .one-messages-title .title .ring{
+	display: inline-block;
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+	background-color: #00aaff;
+}
+.one .one-messages .one-messages-title .title .ring2{
+	display: inline-block;
+	margin-right: 5px;
+	width: 0px;
+	height: 0px;
+	border-radius: 100px;
+	background-color: white;
+}
+.one .one-messages .one-messages-title{
+	display: block;
+	font-size: 14px;
+	color: black;
+}
+.one .one-messages .one-messages-title .text{
+	display: block;
+	font-size: 14px;
+	color: #b5b5b5;
+}
+.one .one-messages .interval{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	color: #7f8fa4;
+}
+.one .one-text{
+	color: #585d68;
+	font-size: 14px;
+}
+.one .one-text .text{
+	display: inline-block;
+	width: 320px;
+	height: 100%;
+	overflow: hidden;
+}
+.one .one-text .ring-background{
+    position: absolute;
+    top: 50px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 100px;
+    background-color: #249af2;
+    color: #fff;
+    text-align: center;
+}
+/*白色区域右侧列样式*/
+.left-messages{
+	flex: 1;
+    order: 2;
+}
+.left-messages .messages-personally{
+	height: 80px;
+	width: 100%;
+	border-bottom: 1px solid #e5e8ee;
+}
+.left-messages .messages-personally .messages-personally-warp{
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	height: 50px;
+	width: 200px;
+}
+.messages-personally .messages-personally-warp .messages-name{
+	display: inline-block;
+	position: absolute;
+	margin-left: 15px;
+}
+.messages-personally-warp .messages-name .title{
+	display: block;
+	color: #2399f1;
+	font-size: 16px;
+}
+.messages-personally-warp .messages-name .admin{
+	color: #b5b5b5;
+	font-size: 14px;
+}
+.messages-personally-warp .tool{
+	position: absolute;
+    left: 150px;
+    top: 15px;
+    margin-left: 20px;
+}
+.left-messages .nav{
+	position: relative;
+    height: 78px;
+    line-height: 78px;
+    border-bottom: 1px solid #e5e8ee;
+}
+.left-messages .nav .nav-title{
+	margin-left: 30px;
+    font-size: 18px;
+}
+.left-messages .nav .nav-ring{
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #1bb934;
+    border-radius: 100px;
+}
+.left-messages .nav .nav-button{
+	position: absolute;
+    top: 18px;
+    right: 0px;
+    display: inline-block;
+    width: 285px;
+    height: 32px;
+    line-height: 32px;
+}
+.nav .nav-button .button-left{
+    display: inline-block;
+    width: 124px;
+    height: 32px;
+    margin-right: 15px;
+    background-image: url(../img/nav-button-bgimg-left.png);
+    background-repeat: no-repeat;
+    border-right: 1px solid #e5e8ee;
+}
+.nav .nav-button .button-left .nav-img{
+	margin-left: 10px;
+    margin-right: 5px;
+}
+.nav .nav-button .button-right .right-img{
+    margin-left: 20px;
+}
+.nav .nav-button .page{
+	font-size: 14px;
+    margin-right: 15px;
+}
+.nav .nav-button .button-right{
+	display: inline-block;
+	width: 73px;
+	height: 32px;
+	background-image: url(../img/nav-button-bgimg-right.png);
+}
+/*article样式*/
+.left-messages .article{
+	height: 70%;
+    position: absolute;
+    overflow: auto;
+}
+.left-messages .article .new-article1{
+	padding-left: 30px;
+    padding-top: 20px;
+	border-bottom: 1px solid #e6e9ec;
+	width:650px;
+	display: block;
+}
+.left-messages .article .new-article2{
+	padding-left: 30px;
+    padding-top: 20px;
+	border-bottom: 1px solid #2399f1;
+	width:650px;
+	display: block;
+}
+.left-messages .article .new-article3{
+	padding-left: 30px;
+    padding-top: 20px;
+	border-bottom: 1px solid #e6e9ec;
+	width:650px;
+	display: block;
+}
+.left-messages .article .new-article1 .img{
+	float: left;
+}
+.left-messages .article .new-article2 .img{
+	float: left;
+}
+.left-messages .article .new-article3 .img{
+	float: left;
+}
+.article .new-article1 .article-centent{
+    display: inline-block;
+    padding-left: 20px;
+    width: 83%;
+}
+.article .new-article2 .article-centent{
+    display: inline-block;
+    padding-left: 20px;
+    width: 83%;
+}
+.article .new-article3 .article-centent{
+    display: inline-block;
+    padding-left: 20px;
+    width: 83%;
+}
+.article .new-article1 .article-centent .name{
+	font-size: 16px;
+}
+.article .new-article2 .article-centent .name{
+	font-size: 16px;
+}
+.article .new-article3 .article-centent .name{
+	font-size: 16px;
+}
+.article .new-article1 .article-centent .time{
+    font-size: 14px;
+	color: #94a1b2;
+}
+.article .new-article2 .article-centent .time{
+    font-size: 14px;
+	color: #94a1b2;
+}
+.article .new-article3 .article-centent .time{
+    font-size: 14px;
+	color: #94a1b2;
+}
+.article .new-article1 .article-centent .centent{
+	display: block;
+	color: #909399;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.article .new-article2 .article-centent .centent{
+	display: block;
+	color: #909399;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.article .new-article3 .article-centent .centent{
+	display: block;
+	color: #909399;
+	font-size: 14px;
+}
+.article-date{
+    position: absolute;
+    top: 325px;
+    left:345px ;
+    width: 125px;
+    height: 22px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7f8fa4;
+    text-align: center;
+}
+.article-title{
+    position: absolute;
+    top: 714px;
+    left:345px ;
+    width: 125px;
+    height: 22px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    color: #5eb4f5;
+    text-align: center;
+}
+.add-box{
+    width: 770px;
+    height: 50px;
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+.add-box .add-btn{
+    float: left;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #e6e9ec;
+	background-image: linear-gradient(to bottom,#fefefe,#f2f4f7);
+}
+.add-btn .add-icon{
+    margin: 18px;
+}
+
+.add-content{
+	font-size: 12px;
+}
+
+.add-box .add-content{
+    float: left;
+	width: 616px;
+	height: 50px;
+	margin-left: -1px;
+	padding-left: 20px;
+	border: 1px solid #e6e9ec;
+}
+.add-content .add-line{
+    display: inline-block;
+	height: 25px;
+	margin-top: 5px;
+	margin-left: 20px;
+	border-left:2px solid #b7b7b7;
+}
+.img2{
+	float: left;
+}
+.inside-img2{
+	padding-left: 20px;
+}
+.inside{
+	margin-bottom: 20px;
+}
+.inside-img2{
+	margin-left: 20px;
+}
+.inside-img3{
+	position: absolute;
+    top: 639px;
+    left: 358px;
+    width: 28px;
+    height: 18px;
+    background-color: gray;
+    text-align: center;
+}
