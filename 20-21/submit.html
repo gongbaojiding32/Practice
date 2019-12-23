@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+
+<body>
+    <input id="name" type="text">
+    <button id="submit-btn">Submit</button>
+    <script>
+        //当点击按钮submit-btn时，在console中输出name中的内容
+        var text = document.getElementById('name');
+        var btn = document.getElementById('submit-btn');
+        btn.onclick = function () {
+            console.log(text.value);
+        }
+
+        //在输入过程中，如果按回车键，则同样执行上一条的需求
+        text.addEventListener('keydown', enterkey);
+        function enterkey(event) {
+            var e = event || window.event;
+            if (e.keyCode == 13) {
+                console.log(text.value);
+            }
+        }
+
+        //在输入过程中，如果输入ESC键，则把输入框中的内容清空
+        text.addEventListener("keydown", empty);
+        function empty(event) {
+            var e = event || window.event;
+            if (e.keyCode == 27) {
+                text.value = " ";
+            }
+        }
+    </script>
+</body>
+
+</html>
