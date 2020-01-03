@@ -1,0 +1,59 @@
+    .container {
+        width: 900px;
+        margin: 20px auto;
+    }
+    
+    .filter {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+    
+    .filter .filter-item {
+        margin-bottom: 10px;
+    }
+    
+    .filter .filter-item label {
+        margin-left: 5px;
+    }
+    
+    select {
+        width: 100px;
+        height: 30px;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    table thead tr {
+        height: 48px;
+    }
+    
+    table thead th,
+    table td {
+        padding: 5px 14px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+    }
+    
+    table thead th:first-child {
+        width: 86px;
+        background: lightcyan;
+    }
+    
+    table tr td.rows {
+        background: lightcyan;
+    }
+    
+    table thead th:nth-child(2) {
+        width: 72px;
+    }
+    
+    table td {
+        text-align: right;
+    }
+    
+    table tr td:first-child,
+    table tr td:nth-child(2) {
+        text-align: center;
+    }
